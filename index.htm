@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="sakura.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <title>OS Terrain 50 elevations</title>
+</head>
+<body>
+    <h1>PHP OS Terrain 50 Reader Demo</h1>
+
+    <p>This is a minimal use case demo for the PHP class OSTerrain50Reader
+        which generates elevation data for Great Britain.</p>
+        
+    <p>Mount Snowdon (1085m) in Wales and Luccombe Down (235m) on the Isle of Wight
+        are approximately 210 miles (338Km) apart. Locations values are British 
+        National Grid eastings and northings.</p>
+
+    <p>Tick the appropriate box to include a location in the output.</p>
+
+    <p class="compact">
+        <input type="checkbox" id="cbSnowdon" checked>
+        <label for="cbSnowdon">Mount Snowdon</label>: [260993, 354380]</p>
+    <p class="compact">
+        <input type="checkbox" id="cbLuccombe" checked> 
+        <label for="cbLuccombe">Luccombe Down</label>: [456542, 78503]</p>        
+    <p class="compact">
+        <input type="checkbox" id="cbUser1">
+        e<input id="locUser1e"> n<input id="locUser1n">
+        <label for="cbUser1">(your OS location)</label></p>
+    <p class="compact">
+        <input type="checkbox" id="cbUser2">
+         e<input id="locUser2e"> n<input id="locUser2n">
+        <label for="cbUser2">(your OS location)</label></p>
+    <p class="compact">
+        <input type="checkbox" id="infills" checked>
+        <label for="infills">Include infill elevations every 50m between each location</label>/p>
+    
+    <p><button id="btnElevations">Generate elevations</button></p>
+
+    <div id="results">Output will appear here...</div >
+    <script src="getElevations.js" defer></script>
+</body>
+</html>

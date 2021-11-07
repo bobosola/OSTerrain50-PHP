@@ -1,0 +1,21 @@
+body {
+    font-size: 1.6rem;
+}
+
+a {
+  text-decoration:underline;
+}
+
+#results{
+    font-size: small;
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+label {
+    display: inline;
+}
+
+p.compact {
+    padding:o;
+    margin:0;
+}
