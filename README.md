@@ -6,7 +6,7 @@ The binary data file is produced from a free data-compiling application which is
 
 ## What problem does this solve?
 
-OS Terrain 50 data is almost certainly the optimal free data set to use for the generation of elevation data for Great Britain. The reasons why are explained in more detail on the [author' site](https://osola.org.uk/osterrain50). The reader code produces thousand of elevations in millseconds and is an easy way to obtain elevation data without using specialist GIS software.
+OS Terrain 50 data is almost certainly the optimal free data set to use for the generation of elevation data for Great Britain. The reasons why are explained in more detail on the [author's site](https://osola.org.uk/osterrain50). The reader code produces thousand of elevations in millseconds and is an easy way to obtain elevation data without using specialist GIS software.
 
 ## Running the demo
 
