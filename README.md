@@ -10,7 +10,7 @@ OS Terrain 50 data is almost certainly the optimal free data set to use for the 
 
 ## Running the demo
 
-You can see a [working version of this demo](https://www.osola.org.uk/PHP-OSTerrain50-PHP) on the author's site. 
+You can see a [working version of this demo](https://www.osola.org.uk/OSTerrain50-PHP) on the author's site. 
 
 In order to run it yourself you will need a webserver with PHP 7.4 or higher. Here's how:
 
