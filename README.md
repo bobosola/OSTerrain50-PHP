@@ -1,11 +1,8 @@
 # OS Terrain 50 elevation data in PHP
 
-This repo contains a minimal demo site to accompany the PHP class `OSTerrain50Reader.php` which returns elevation data for Great Britain. It reads a custom binary data file containing elevation data compiled from the freely-downloadable [OS Terrain 50 ASCII](https://www.ordnancesurvey.co.uk/business-government/products/terrain-50) data set. 
+This repo contains a minimal demo site to accompany the PHP class `OSTerrain50Reader.php` which returns elevation data for Great Britain. It reads a custom binary data file containing elevation data compiled from the freely-downloadable [OS Terrain 50 ASCII](https://www.ordnancesurvey.co.uk/business-government/products/terrain-50) data set.
 
-Compiled binaries of the data-compiling application are available as detailed below.
-
-A sister repo [OSTerrain50-SimpleBinary](https://github.com/bobosola/OSTerrain50-SimpleBinary) contains the Rust code for building the data-compling application. More details are there if you wish to build the data-compiling application yourself.
-
+The binary data file is produced from a free data-compiling application which is available to download from a sister repo [OSTerrain50-SimpleBinary](https://github.com/bobosola/OSTerrain50-SimpleBinary) - more details there.
 
 ## What problem does this solve?
 
@@ -13,19 +10,19 @@ OS Terrain 50 data is almost certainly the optimal free data set to use for the 
 
 ## Running the demo
 
-You can see a working version of this demo on the [author's site](https://www.osola.org.uk/PHP-OST50). 
+You can see a [working version of this demo](https://www.osola.org.uk/PHP-OST50) on the author's site. 
 
 In order to run it yourself you will need a webserver with PHP 7.4 or higher. Here's how:
 
 * git clone (or download) this repo's files to your webserver
-* download the [OS Terrain 50 ASCII data]() zip file
+* download the ``ASCII Grid & GML (Grid)`` [OS Terrain 50 ASCII data](https://osdatahub.os.uk/downloads/open/Terrain50) zip file
 * download the command-line data compiler application ``osterrain50``, available as:
-    * a [Mac universal 64 bit DMG file](https://osola.org.uk/osterrain50/binaries/osterrain50.dmg)
-    * a [Windows 64 bit ZIP file](https://osola.org.uk/osterrain50/binaries/osterrain50.zip)
-    * a [Ubuntu 64 bit GZ file](https://osola.org.uk/osterrain50/binaries/osterrain50.tar.gz)
+    * a signed & notarized [Mac Universal Binary 64 bit DMG file](https://github.com/bobosola/OSTerrain50-SimpleBinary/tree/main/binaries/Mac)
+    * a [Windows 64 bit zip file](https://github.com/bobosola/OSTerrain50-SimpleBinary/tree/main/binaries/Windows)
+    * a [Ubuntu 64 bit tar.gz file](https://github.com/bobosola/OSTerrain50-SimpleBinary/tree/main/binaries/Ubuntu)
 * use the application to unzip and convert the downloaded OS data zip file into a binary data file thus: `$ osterrain50 path/to/downloaded_OS_data_zip_file`                
 
-* place the generated binary data file `OSTerrrain50.bin` in the same directory as the site files
+* place the generated binary data file `OSTerrrain50.bin` in the same directory as the site files (the OS data zip and data files can now be discarded)
 * browse to the site and check the demo
 
-The reader class is heavily commented to assist with translation to other languages. The Rust repo also contains working demo code to read the binary data file to produce elevation data.
+The reader class is heavily commented to assist with translation to other languages. The sister Rust repo also contains working demo code to read the binary data file to produce elevation data.
